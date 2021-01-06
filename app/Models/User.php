@@ -16,6 +16,7 @@ class User extends Authenticatable
      *
      * @var array
      */
+    /**建立資料時直接被批量賦值*/
     protected $fillable = [
         'name',
         'email',
@@ -28,7 +29,6 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password',
         'remember_token',
     ];
 
