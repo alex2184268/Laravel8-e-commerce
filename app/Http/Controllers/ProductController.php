@@ -12,9 +12,11 @@ class ProductController extends Controller
         $data = Product::all();
         return view('product',[ 'products' => $data]);
     }
+    
     function detail($id)
     {
-         $data = Product::find($id); //查找模組異常  
-         return view('detail',['products' => $data]);
+        $data = Product::find($id); //查找模組異常  
+        return view('detail',['products' => $data]);
     } 
+    
 }
